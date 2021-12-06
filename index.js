@@ -197,11 +197,13 @@ const helo= document.getElementById('helo')
 change.addEventListener('click', HandleChange)
 
 function HandleChange(){
-      const randomquote = quotes[Math.floor(Math.random()*quotes.length)]
       const curQuote = quote.innerText;
-      if(curQuote != randomquote.name){
-            quote.innerHTML = randomquote.name;
-            image.src = randomquote.img;
-            image.style.display='block';
-      }
+      let randomquote;
+      do{
+            randomquote = quotes[Math.floor(Math.random()*quotes.length)];
+      }while(curQuote === randomquote.name)
+            
+      quote.innerHTML = randomquote.name;
+      image.src = randomquote.img;
+      image.style.display='block';
 }
