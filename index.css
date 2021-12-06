@@ -9,7 +9,9 @@
 }
 body
 {
-    background: rgb(229, 54, 40);
+    background: linear-gradient(40deg, rgb(3 228 166 / 60%), rgb(231 158 240 / 70%), rgb(27 222 141 / 34%));
+    background-repeat:no-repeat;
+    height: 100vh;
     overflow-y: scroll;
 
 }
