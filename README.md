@@ -1,7 +1,7 @@
 # 02_Random_Cutie_things
 ___________
 **hii world =))**  
-Let's jump up to the cutie things 😗😗 Right here 👉👉 https://xanhrii.github.io/02_Random_Cutie_things/  
+Let's jump up to this cutie things 😗😗 Right here 👉👉 https://xanhrii.github.io/02_Random_Cutie_things/  
 _____  
 kíuu :v  
  <p align="left">
