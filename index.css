@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif;
+}
+body
+{
+    background: rgb(229, 54, 40);
+    overflow-y: scroll;
+
+}
+
+.block-Quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 580px;
+    margin: auto;
+    padding: 30px;
+    
+    max-width: 80%;
+    max-height: 90vh;
+    border-radius: 30px;
+
+    text-align: center;
+    background:#f0f0f3;
+
+}
+audio {
+    max-width: 100%;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.change-btn 
+{
+    display: block;
+    max-width: 100%;
+    color:#fff;
+    font-size: 17px;
+    font-weight: 500;
+
+    padding: 15px 36px;
+    border: none;
+    border-radius: 30px;
+    background:coral;
+    box-shadow: -10px -10px 14px #ffffffe8, 10px 10px 14px rgb(167, 167, 167), inset -2px -5px 5px rgb(208, 98, 59);
+
+    cursor: pointer;
+    transition: 0.04s;
+    animation: changeBg 1.3s linear infinite;
+}
+@keyframes changeBg {
+    to
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.change-btn:hover{
+    transform: scaleX(0.99);
+}
+
+.change-btn:active
+{
+    transform: scale(0.96);
+}
+
+.helo
+{ 
+    color: #fff;
+    margin: 20px auto;
+    width: 23ch;
+    animation: typing 2s steps(23);
+    white-space: nowrap;
+    overflow:hidden;
+}
+@keyframes typing {
+    from
+    {
+        width: 0;
+    }
+}
+
+#img{
+    margin: 20px auto 30px;
+    max-width: 100%;
+    
+    width: auto;
+    height: 200px;
+    max-height: 75%;
+    border-radius: 20px;
+    box-shadow: -4px -4px 0 #b2ff73, 4px 4px 0px rgba(2, 255, 175, 0.857);
+    filter: saturate(1.5);
+    display: none;
+}
+
+#img:hover{
+    transform: scale(1.4);
+    transition: 0.5s ease-out;
+    z-index: 1;
+}
+
+.content
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(14, 132, 104);
+    text-shadow: 1px 2px 0px #68f3d279;
+}
+/* --Responsive-- */
+@media screen and  (max-width: 400px) {
+    .block-Quote{
+        margin-top: 20px;
+        display: block;
+        overflow: scroll;
+
+    }
+    .change-btn
+    {
+        font-size: 12px;
+        word-wrap: break-word;
+        padding: 10px;
+    }
+    #img{
+        height: auto;
+    }
+
+}
+
+@media screen and  (max-width: 768px) and (min-width:399px){
+    #img{
+        height: 250px;
+    }
+}
+@media screen and  (min-width: 769px) {
+    #img{
+        height: 320px;
+    }
+}
